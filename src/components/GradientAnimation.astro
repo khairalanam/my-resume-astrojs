@@ -1,0 +1,30 @@
+<div class="stripe-container">
+  <div class="stripe"></div>
+</div>
+
+<style>
+  .stripe-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff6b6b, #6b47ff);
+  }
+
+  .stripe {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(45deg, #6b47ff, #ff6b6b);
+    background-size: 200% 100%;
+    animation: stripeAnimation 3s linear infinite;
+  }
+
+  @keyframes stripeAnimation {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+</style>
