@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "my-resume",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,5 +11,21 @@
   },
   "dependencies": {
     "astro": "^3.0.12"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.12.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-astro"
+    ],
+    "overrides": [
+      {
+        "files": "*.astro",
+        "options": {
+          "parser": "astro"
+        }
+      }
+    ]
   }
 }
