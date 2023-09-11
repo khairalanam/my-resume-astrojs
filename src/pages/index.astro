@@ -1,9 +1,21 @@
 ---
+import BasicInfo from "../components/BasicInfo.astro";
+import EducationInfo from "../components/EducationInfo.astro";
 import GradientAnimation from "../components/GradientAnimation.astro";
+import Heading from "../components/Heading.astro";
+import ProjectsInfo from "../components/ProjectsInfo.astro";
+import SkillsInfo from "../components/SkillsInfo.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Khair's Resume">
   <GradientAnimation />
-   hello
+  <Heading title="Basic Info" />
+  <BasicInfo />
+  <Heading title="Education" />
+  <EducationInfo />
+  <Heading title="Projects" />
+  <ProjectsInfo />
+  <Heading title="Skills" />
+  <SkillsInfo />
 </Layout>
