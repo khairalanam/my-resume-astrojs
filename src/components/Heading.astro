@@ -6,7 +6,9 @@ interface Props {
 const { title }: Props = Astro.props;
 ---
 
-<section>
-  <h1>{title}</h1>
-  <hr />
+<section
+  class="px-6 md:px-8 lg:px-10 py-4 md:py-5 lg:py-6 text-5xl md:text-6xl lg:text-7xl font-bold"
+>
+  <h1 class="leading-snug tracking-wider">{title}</h1>
+  <hr class="border-2" />
 </section>
